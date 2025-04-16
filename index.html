@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Master</title>
+    <link rel="icon" href="l.jpeg">
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Random Master</h1>
+    </header>
+
+    <!-- Random Number Generator -->
+    <section id="random-number">
+        <h2>Random Number Generator</h2>
+        <label for="digit-category">Choose Digit Category:</label>
+        <select id="digit-category">
+            <option value="1">1 Digit</option>
+            <option value="2">2 Digits</option>
+            <option value="3">3 Digits</option>
+        </select>
+        <br>
+        <br>
+        <button id="b" onclick="generateRandomNumber()">Generate Random Number</button>
+        <p id="random-number-output"></p>
+    </section>
+
+    <!-- Random Password Generator -->
+    <section id="random-password">
+        <h2>Random Password Generator</h2>
+        <button onclick="generateRandomPassword()">Generate Random Password</button>
+        <p id="random-password-output"></p>
+    </section>
+
+    <!-- Random Quotes Generator -->
+    <section id="random-quotes">
+        <h2>Random Quotes Generator</h2>
+        <label for="language">Choose Language:</label>
+        <select id="language">
+            <option value="english">English</option>
+            <option value="tamil">Tamil</option>
+        </select>
+        <label for="quote-category">  Choose Quote Category:</label>
+        <select id="quote-category">
+            <option value="attitude">Attitude</option>
+            <option value="funny">Funny</option>
+            <option value="love">Love</option>
+            <option value="positive">Positive</option>
+            <br>
+        </select>
+
+        
+        <button style="margin-top: 10px;" onclick="generateRandomQuote()">Generate Random Quote</button>
+        <p id="random-quote-output"></p>
+    </section>
+<section id ="Random-Color">
+    <h2>Random Color</h2>
+    <button onclick="generateRandomColor()">Generate Random Color</button>
+    <p id="Random-Color-output"></p>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
